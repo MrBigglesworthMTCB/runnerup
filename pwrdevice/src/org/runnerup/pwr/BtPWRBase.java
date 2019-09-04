@@ -1,4 +1,3 @@
-    
 /*
  * Copyright (C) 2014 jonas.oreland@gmail.com
  *
