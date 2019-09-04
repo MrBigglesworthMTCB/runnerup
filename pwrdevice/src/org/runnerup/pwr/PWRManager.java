@@ -51,14 +51,14 @@ public class PWRManager {
         }
     }
 
-    /**
+    /** commented out in case needs to be reinserted
      * Creates an {@link PWRProvider}. This will be wrapped in a {@link RetryingPWRProviderProxy}.
      * *
      * @param src The type of {@link PWRProvider} to create.
      * @return A new instance of an {@link PWRProvider} or null if
      *   A) 'src' is not a valid {@link PWRProvider} type
      *   B) the device does not support an {@link PWRProvider} of type 'src'
-     */
+    
     public static PWRProvider getPWRProvider(Context ctx, String src) {
         PWRProvider provider = getPWRProviderImpl(ctx, src);
         if (provider != null) {
@@ -83,7 +83,8 @@ public class PWRManager {
 
         return null;
     }
-
+ 
+     */
     /**
      * Returns a list of {@link PWRProvider}'s that are available on this device.
      * 
